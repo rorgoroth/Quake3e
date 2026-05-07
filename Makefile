@@ -30,27 +30,27 @@ ifeq ($(COMPILE_PLATFORM),mingw32)
   endif
 endif
 
-BUILD_CLIENT     = 1
-BUILD_SERVER     = 1
+BUILD_CLIENT      = 1
+BUILD_SERVER      = 1
 
-USE_SDL          = 1
-USE_CURL         = 1
-USE_LOCAL_HEADERS= 0
-USE_SYSTEM_JPEG  = 0
+USE_SDL           = 1
+USE_CURL          = 1
+USE_LOCAL_HEADERS = 0
+USE_SYSTEM_JPEG   = 0
 
 USE_OGG_VORBIS    = 1
 USE_SYSTEM_OGG    = 0
 USE_SYSTEM_VORBIS = 0
 
-USE_VULKAN       = 1
-USE_OPENGL       = 1
-USE_OPENGL2      = 0
-USE_OPENGL_API   = 1
-USE_VULKAN_API   = 1
-USE_RENDERER_DLOPEN = 1
+USE_OPENGL          = 0
+USE_OPENGL_API      = 0
+USE_OPENGL2         = 0
+USE_RENDERER_DLOPEN = 0
+USE_VULKAN          = 1
+USE_VULKAN_API      = 1
 
 # valid options: opengl, vulkan, opengl2
-RENDERER_DEFAULT = opengl
+RENDERER_DEFAULT = vulkan
 
 CNAME            = quake3e
 DNAME            = quake3e.ded
