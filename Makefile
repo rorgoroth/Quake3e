@@ -438,7 +438,7 @@ ifdef MINGW
   BINEXT = .exe
 
   LDFLAGS += -mwindows -Wl,--dynamicbase -Wl,--nxcompat
-  LDFLAGS += -lwsock32 -lgdi32 -lwinmm -lole32 -lws2_32 -lpsapi -lcomctl32
+  LDFLAGS += -lwsock32 -lgdi32 -lwinmm -lole32 -lws2_32 -lpsapi -lcomctl32 -liphlpapi
 
   CLIENT_LDFLAGS=$(LDFLAGS)
 
